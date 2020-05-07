@@ -8,18 +8,18 @@ pipeline {
 
                    nexusArtifactUploader artifacts: [
                         [
-                            artifactId: 'Installation of Nexus Repository on Windows.zip', 
+                            artifactId: 'Publish.zip', 
                             classifier: '', 
-                            file: "Installation of Nexus Repository on Windows.zip", 
+                            file: "Publish.zip", 
                             type: 'zip'
                         ]
                     ], 
                     credentialsId: 'nexus3', 
-                    groupId: 'com', 
-                    nexusUrl: '10.79.244.15:8081', 
+                    groupId: 'in.javahome', 
+                    nexusUrl: '10.61.43.73:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: 'MyFirstNuget', 
+                    repository: 'simpleapp-release', 
                     version: "1" 
                    
                   /*  nexusArtifactUploader artifacts: [
