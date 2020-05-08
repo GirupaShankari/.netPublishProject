@@ -12,7 +12,7 @@ pipeline {
         
        //  bat label: '', script: 'C:/"Program Files (x86)"/IIS/"Microsoft Web Deploy V3"/msdeploy.exe -verb:sync -source:package="Publish.zip" -dest:auto,computerName="https://EC2AMAZ-U8T6358:8172/msdeploy.axd?site=my_iis_site",username=Administrator,password=Girupa28,authType=basic -allowUntrusted=true'
         
-            bat label: '', script: ' C:/"Program Files (x86)"/IIS/"Microsoft Web Deploy V3"/msdeploy.exe -verb:sync -source:package="Publish.zip" -dest:auto,computerName="https://EC2AMAZ-U8T6358:8172/msdeploy.axd?site=Default Web Site",username=Administrator,password=Girupa28,authType=basic -allowUntrusted=true'
+            bat label: '', script: ' C:/"Program Files (x86)"/IIS/"Microsoft Web Deploy V3"/msdeploy.exe -verb:sync -source:package="Publish.zip" -dest:auto,computerName="https://EC2AMAZ-U8T6358:8172/msdeploy.axd?site=Default Web Site/",username=Administrator,password=Girupa28,authType=basic -allowUntrusted=true'
             
          }
       }
